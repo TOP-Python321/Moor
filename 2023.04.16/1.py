@@ -1,17 +1,32 @@
+digit1 = input("Первое число: ")
+digit2 = input("Второе число: ")
+digit3 = input("Третье число: ")
+
 sum_of_positive = 0
-
-digit1 = int(input("Первое число: "))
-if digit1 > 0:
-    sum_of_positive += digit1
-
-digit2 = int(input("Второе число: "))
-if digit2 > 0:
-    sum_of_positive += digit2
-
-digit3 = int(input("Третье число: "))
-if digit3 > 0:
-    sum_of_positive += digit3
+    
+if digit1.isdecimal() > 0:
+    sum_of_positive += int(digit1)
+elif float(digit1) > 0:
+    sum_of_positive += float(digit1)
+    
+if digit2.isdecimal() > 0:
+    sum_of_positive += int(digit2)
+elif float(digit2) > 0:
+    sum_of_positive += float(digit2)
+    
+if digit3.isdecimal() > 0:
+    sum_of_positive += int(digit3)
+elif float(digit3) > 0:
+    sum_of_positive += float(digit3)
 
 print(sum_of_positive) 
 
-# 8
+# Первое число: 5
+# Второе число: 63
+# Третье число: 2.9
+# 70.9
+
+# Первое число: 5
+# Второе число: -9
+# Третье число: 6
+# 11
