@@ -1,13 +1,16 @@
 digit1 = int(input("Первое число: "))
 digit2 = int(input("Второе число: "))
 
-if digit1 % digit2 == 0:
-    print(f"{digit1} делится на {digit2} нацело \n"
-          f"частное: {digit1 // digit2}")
+if digit1 and digit2 != 0:
+    if digit1 % digit2 == 0:
+        print(f"{digit1} делится на {digit2} нацело \n"
+              f"частное: {digit1 // digit2}")
+    else:
+        print(f"{digit1} не делится на {digit2} нацело \n"
+              f"неполное частное: {digit1 // digit2} \n"
+              f"остаток: {digit1 % digit2}")
 else:
-    print(f"{digit1} не делится на {digit2} нацело \n"
-          f"неполное частное: {digit1 // digit2} \n"
-          f"остаток: {digit1 % digit2}")
+    print("Ни одно из чисел не должно быть равным нулю.")
     
 # 20 делится на 5 нацело
 # частное: 4
