@@ -1,25 +1,19 @@
-digit1 = input("Первое число: ")
-digit2 = input("Второе число: ")
-digit3 = input("Третье число: ")
+digit1 = float(input("Первое число: "))
+digit2 = float(input("Второе число: "))
+digit3 = float(input("Третье число: "))
 
 sum_of_positive = 0
 
 # ИСПРАВИТЬ: две проверки на каждое число избыточны, поскольку в задаче нет требования работать с int объектами — перепишите код так, чтобы проверялось только одно логическое выражение
-if digit1.isdecimal():
-    sum_of_positive += int(digit1)
-elif float(digit1) > 0:
+if digit1 > 0:
+    sum_of_positive += digit1
     # ИСПРАВИТЬ: повторное преобразование в объект float лишнее
-    sum_of_positive += float(digit1)
-
-if digit2.isdecimal():
-    sum_of_positive += int(digit2)
-elif float(digit2) > 0:
-    sum_of_positive += float(digit2)
-
-if digit3.isdecimal():
-    sum_of_positive += int(digit3)
-elif float(digit3) > 0:
-    sum_of_positive += float(digit3)
+    
+if digit2 > 0:
+    sum_of_positive += digit2
+    
+if digit3 > 0:
+    sum_of_positive += digit3
 
 print(sum_of_positive) 
 
