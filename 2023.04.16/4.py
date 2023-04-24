@@ -1,7 +1,6 @@
 first_cell = input("Укажите первую клетку: ")
 second_cell = input("Укажите вторую клетку: ")
 
-# КОММЕНТАРИЙ: вам очень повезло, что код символа 'a' является нечётным числом =)
 color1 = (ord(first_cell[0]) + int(first_cell[1])) % 2
 color2 = (ord(second_cell[0]) + int(second_cell[1])) % 2
 
