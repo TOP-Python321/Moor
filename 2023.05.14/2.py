@@ -6,14 +6,13 @@ def taxi_cost(distance: int, waiting_time=0) -> int | None:
     Otherwise returns None
     """
     start = 80
-    fine = 80
     price_per_distance = distance // 150 * 6
     price_per_waiting = waiting_time * 3
 
     total = start + price_per_distance + price_per_waiting
     
     if distance == 0:
-        total = fine + price_per_waiting
+        total = start * 2 + price_per_waiting
     elif distance < 0:
         total = None
     
