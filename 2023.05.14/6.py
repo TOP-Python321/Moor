@@ -1,4 +1,4 @@
-def orth_triangle(cathetus1=0, cathetus2=0, hypotenuse=0) -> float:
+def orth_triangle(cathetus1: int = 0, cathetus2: int = 0, hypotenuse: int = 0) -> float:
     """
     Return the third side of a triangle if the other two are known. 
     Return None if the calculation is not possible or if the hypotenuse 

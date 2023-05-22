@@ -1,4 +1,4 @@
-def taxi_cost(distance: int, waiting_time=0) -> int | None:
+def taxi_cost(distance: int, waiting_time: int = 0) -> int | None:
     """
     Returns the cost of the trip and the waiting time (if any) 
     if the distance is > 0. If the distance == 0, 

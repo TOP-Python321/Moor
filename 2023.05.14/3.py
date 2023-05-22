@@ -1,4 +1,4 @@
-def numbers_strip(sample: list, n=1, copy=False) -> list:
+def numbers_strip(sample: list, n: int = 1, copy: bool = False) -> list:
     """
     Returns a list with the 'n' minimum and maximum numbers removed. 
     If copy=True - returns a copy of the list
