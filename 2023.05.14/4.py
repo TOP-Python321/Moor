@@ -3,22 +3,16 @@ def countable_nouns(number: int, words: tuple[str, str, str]) -> str:
     Returns one word out of three passed as the second argument 'words'
     that matches the number passed as the first argument.
     """
-    numeral = str(number)
-    
-    if len(numeral) > 1:
-        if int(numeral[-1]) == 1 and int(numeral[-2]) != 1:
-            return words[0]
-        elif 2 <= int(numeral[-1]) <= 4 and 2 < int(numeral[-2]) < 1:
-            return words[1]
-        else:
-            return words[2]
+    if number % 100 in [11, 12, 13, 14]:
+        return words[2]
     else:
-        if int(numeral[-1]) == 1:
+        last_digit = number % 10
+        if last_digit == 1:
             return words[0]
-        elif 2 <= int(numeral[-1]):
+        elif last_digit in [2, 3, 4]:
             return words[1]
         else:
-            return words[2]
+            return words [2]
             
             
             
