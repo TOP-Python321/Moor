@@ -9,36 +9,43 @@ max_number = int("9" * rank)
 min_number = (max_number + 1) // 10
 count = 0
 
+# ОТВЕТИТЬ: это-то, конечно, лучший алгоритм — а вы поняли, как и почему он работает?
 prime = [True] * (max_number + 1)
 prime[0] = prime[1] = False
 for i in range(2, max_number + 1):
     if not prime[i]:
         continue
-    for j in range(i * i, max_number + 1, i):
+    for j in range(i*i, max_number+1, i):
         prime[j] = False
-primes = len([i for i in range(min_number, max_number + 1) if prime[i]])
+
+# ИСПОЛЬЗОВАТЬ: если нужно только количество вычислить, а сами числа не нужны, то лучше так сделать:
+primes = sum(prime[i] for i in range(min_number, max_number+1))
+# primes = len([i for i in range(min_number, max_number+1) if prime[i]])
+
 print(primes)
+
 
 # Укажите разряд: 4
 # 1061
 
 
 # Изначальный вариант
-
 # rank = int(input("Укажите разряд: "))
-
 # max_number = int("9" * rank)
 # min_number = (max_number + 1) // 10
 # count = 0
-
-# for num in range(min_number, max_number + 1): 
+# for num in range(min_number, max_number + 1):
+    # КОММЕНТАРИЙ: вот здесь нужно было использовать алгоритм нахождения делителей из прошлой задачи: такой производительности как в решете Эратосфена не получили бы, но в 4–5 раз тоже неплохо, 6 разрядов за 10–15 с обсчитывает — а здесь у вас куча итераций лишних с проверками на каждой: ясно дело, тормозит
     # for i in range(2, num): 
         # if(num % i) == 0: 
             # break 
     # else: 
         # count += 1
-
 # print(count)        
+
 
 # Укажите разряд: 4
 # 1061
+
+
+# ИТОГ: отлично — 6/6

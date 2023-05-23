@@ -1,14 +1,17 @@
-digit = int(input("Введите целое число: "))
 
-devider = 1
-sum_of_deviders = 0
+number = int(input("Введите целое число: "))
 
-while devider ** 2 <= digit:
-    if digit % devider == 0:
-        sum_of_deviders += devider + digit // devider
-    devider += 1
-            
-print(sum_of_deviders)
+divider = 1
+sum_of_dividers = 0
+
+# КОММЕНТАРИЙ: вот это хорошо оптимизированный алгоритм, молодец!
+while divider ** 2 <= number:
+    if number % divider == 0:
+        # ИСПРАВИТЬ: только вот в ситуации, когда квадрат делителя равен исходному числу, вы добавляете этот делитель дважды (см. пример ниже)
+        sum_of_dividers += divider + number // divider
+    divider += 1
+
+print(sum_of_dividers)
 
 
 # Введите целое число: 50
@@ -16,3 +19,10 @@ print(sum_of_deviders)
 
 # Введите целое число: 80
 # 186
+
+# Введите целое число: 49
+# 64
+# КОММЕНТАРИЙ: а должно быть 57 (легко проверить вручную)
+
+
+# ИТОГ: хорошо, но нужно доработать — 4/6
