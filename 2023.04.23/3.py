@@ -8,7 +8,9 @@ sum_of_dividers = 0
 while divider ** 2 <= number:
     if number % divider == 0:
         # ИСПРАВИТЬ: только вот в ситуации, когда квадрат делителя равен исходному числу, вы добавляете этот делитель дважды (см. пример ниже)
-        sum_of_dividers += divider + number // divider
+        sum_of_dividers += divider
+        if divider ** 2 != number:
+            sum_of_dividers += number // divider
     divider += 1
 
 print(sum_of_dividers)
@@ -21,7 +23,7 @@ print(sum_of_dividers)
 # 186
 
 # Введите целое число: 49
-# 64
+# 57
 # КОММЕНТАРИЙ: а должно быть 57 (легко проверить вручную)
 
 
