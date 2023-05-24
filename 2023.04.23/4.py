@@ -10,16 +10,17 @@ min_number = (max_number + 1) // 10
 count = 0
 
 # ОТВЕТИТЬ: это-то, конечно, лучший алгоритм — а вы поняли, как и почему он работает?
-prime = [True] * (max_number + 1)
-prime[0] = prime[1] = False
-for i in range(2, max_number + 1):
-    if not prime[i]:
+
+prime = [True] * (max_number + 1) # Создаем список, в котором каждый элемент True
+prime[0] = prime[1] = False # Первый и второй элемент устанавливаем в False, так как они не простые числа. При разрядности равной 3, это будут числа 999 и 1000
+for i in range(2, max_number + 1): 
+    if not prime[i]: # Если элемент списка имеет значение False, то итерация продолжается. Иначе выполнится цикл for
         continue
-    for j in range(i*i, max_number+1, i):
-        prime[j] = False
+    for j in range(i*i, max_number+1, i): # Проходим циклом по всем элементам списка кратным prime[i]
+        prime[j] = False # и устанавливаем их значение в False
 
 # ИСПОЛЬЗОВАТЬ: если нужно только количество вычислить, а сами числа не нужны, то лучше так сделать:
-primes = sum(prime[i] for i in range(min_number, max_number+1))
+primes = sum(prime[i] for i in range(min_number, max_number+1)) # Тут я затупил и нужно было посчитать длину списка.
 # primes = len([i for i in range(min_number, max_number+1) if prime[i]])
 
 print(primes)
