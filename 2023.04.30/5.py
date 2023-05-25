@@ -13,8 +13,15 @@ word = input("Введите слово: ").upper().replace("Ё", "Е")
 
 points = 0
 
-print(sum(points + key for letter in word for key, value in scores_letters.items() if letter in value))
-
+print(sum(
+    # ИСПРАВИТЬ: в генераторном выражении значение points на каждой итерации будет равно нулю
+    # КОММЕНТАРИЙ: если вы подразумевали, что значение points будет меняться, то это двойная ошибка:
+    #  1) int объекты являются неизменяемыми;
+    #  2) если бы были изменяемыми и вы бы как-то прописали это изменение на каждой итерации, то каждое число, возвращаемое генератором во время итерации, содержало бы сумму всех предыдущих очков и очки за очередную букву — а потом все эти числа вы ещё снаружи суммируете функцией sum() — итог вышел бы сильно больше ожидаемого числа
+    points + key
+    for letter in word for key, value in scores_letters.items()
+    if letter in value
+))
 
 # 2 вариант с циклами
 
@@ -23,13 +30,17 @@ print(sum(points + key for letter in word for key, value in scores_letters.items
 
 # for letter in list(word):
     # letters_count[letter] = letters_count.get(letter, 0) + 1
-    
+
 # for key, value in letters_count.items():
     # for score, letter in scores_letters.items():
         # if key in list(letter):
+            # КОММЕНТАРИЙ: не переносите выражения напрямую из явного цикла в генераторное выражение — они могут работать по-разному
             # points += score * value
-            
 # print(points)
+
 
 # Введите слово: неожиданность
 # 20
+
+
+# ИТОГ: почти хорошо, но требует осмысления — 4/6
