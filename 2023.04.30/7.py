@@ -35,10 +35,7 @@ combined_dict = {}
 for dicts in list_of_dicts:
     for key, value in dicts.items():
         # ИСПРАВИТЬ: используйте словарные методы вместо явной проверки наличия ключа в словаре
-        if key not in combined_dict:
-            combined_dict[key] = {value}
-        else:
-            combined_dict[key] = combined_dict[key] | {value}
+        combined_dict.setdefault(key, set()).add(value)
 
 # КОММЕНТАРИЙ: вот это прям хороший пример использования print()
 # ИСПОЛЬЗОВАТЬ: создание множества избыточно — дублей не будет, потому что на каждый уникальный ключ создаётся одна строка — а значит можно распаковать сразу генераторное выражение, взятое в круглые скобки
