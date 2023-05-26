@@ -1,20 +1,39 @@
 first_list = input("Введите список чисел: ").split()
 # ОТВЕТИТЬ: списко — тоже метка в коде?)
-second_list = input("Введите второй списко чисел: ").split()
+# Нет, это была опечатка, но сработало)
+second_list = input("Введите второй список чисел: ").split()
 
 # ИСПРАВИТЬ: если длина первого списка равна нулю, то приложение вываливается с ошибкой (см. пример ниже)
-for i in range(len(first_list)):
+# if len(first_list) < len(second_list):
+    # print("Нет")
     # ИСПРАВИТЬ: неоптимально на каждой итерации заново вычислять длину списка, про который точно известно, что его длина не изменится в ходе работы этого цикла
-    if second_list == first_list[i:i+len(second_list)]:
-        answer = "Да"
-        break
+# else:
+    # for i in range(len(first_list) - len(second_list) + 1):
+        # contains = False
+        # if second_list == first_list[i:i+len(second_list)]:
+            # contains = True
+            # print("Да")
+            # break
+# if not contains:
+    # print("Нет")
     # ИСПРАВИТЬ: лучше блок else отнести к циклу, тогда присваивание будет производиться один раз, а не на каждой итерации после проваленной проверки
-    else:
-        answer = "Нет"
-
-print(answer)
 
 # ОТВЕТИТЬ: а какие ещё возможны способы решения этой задачи?
+# вот такой вариант более удобнее и понятнее, как мне кажется:
+
+if len(first_list) < len(second_list):
+    print("Нет")
+elif len(second_list) == 0:
+    print("Да")
+else:
+    if len(second_list) != 0 and second_list[0] in first_list:
+        index = first_list.index(second_list[0])
+    
+        if first_list[index:index + len(second_list)] == second_list:
+            print("Да")
+        else:
+            print("Нет")
+
 
 
 # Введите список чисел: 1 2 3 5 8

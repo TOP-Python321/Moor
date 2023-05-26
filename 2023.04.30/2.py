@@ -5,7 +5,7 @@ fruits_list = []
 while True:
     fruit = input("Введите название фрукта: ")
     
-    if len(fruit) > 0:
+    if fruit:
         fruits_list.append(fruit)
     else:
         break
@@ -14,10 +14,8 @@ while True:
 if len(fruits_list) == 1:
     # УДАЛИТЬ: добавлять новые элементы — плохая идея; согласитесь, что 'и' на фрукт не тянет
     print(fruits_list[0])
-elif len(fruits_list) >= 2:
-    fruits_str = ','.join(fruits_list[:-1]).replace(',',', ') + f' и {fruits_list[-1]}'
-    # fruits_str += f' и {fruits_list[-1]}'
-    print(fruits_str)
+else:
+    print(', '.join(fruits_list[:-1]) + f' и {fruits_list[-1]}')
 
         # УДАЛИТЬ: менять значения элементов — плохая идея; задача стояла в, дословно: "генерировании форматированной строки"
         # КОММЕНТАРИЙ: к тому же эта часть вашего кода превратится в тыкву, стоит заменить входной список на кортеж — на перспективу об этом тоже неплохо бы думать
