@@ -5,36 +5,41 @@ while True:
 
     if len(user_input) > 1:
         # УДАЛИТЬ: переменная input_errors избыточна
-        input_errors = {user_input[0]: user_input[1]}
-        server_errors |= input_errors
-
-    # ИСПРАВИТЬ: не так: сначала отрабатывает цикл пополнения словаря (до ввода пустой строки)
-    elif len(user_input) == 1:
-        user_input = " ".join(user_input)
-        for key, value in server_errors.items():
-            if value == user_input:
-                print(key)
-            # ДОБАВИТЬ: вывод "! value error !" должен быть здесь, на случай, если ключ не найден
+        server_errors[user_input[0]] = user_input[1]
+    elif len(user_input) == 0:
         break
     else:
+        user_input = user_input[0]
+        found = False
+        for key, value in server_errors.items():
+            if value == user_input:
+                found = True
+                print(key)
+                break
+        if not found:
+            print("! value error !")
+            break
+
+    # ИСПРАВИТЬ: не так: сначала отрабатывает цикл пополнения словаря (до ввода пустой строки)
+            # ДОБАВИТЬ: вывод "! value error !" должен быть здесь, на случай, если ключ не найден
+        
         # УДАЛИТЬ: а этот блок может обработать ошибку ввода (которой в этой задаче можно пренебречь) — но не ошибку поиска ключа по значению
-        print("! value error !")
-        break
+        
     
     
 # Введите код ошибки и значение: 4107 ER_SRS_UNUSED_PROJ_PARAMETER_PRESENT
 # Введите код ошибки и значение: 4108 ER_GIPK_COLUMN_EXISTS
-# Введите код ошибки и значение: 4111 ER_DROP_PK_COLUMN_TO_DROP_GIPK
-# Введите код ошибки и значение: ER_CANT_OPEN_FILE
-# УДАЛИТЬ: у вас нет этого вывода при вводе выше — не ленитесь проверять
-# ! value error !
-
 # Введите код ошибки и значение: 1004 ER_CANT_CREATE_FILE
-# Введите код ошибки и значение: 1006 ER_CANT_CREATE_DB
-# Введите код ошибки и значение: 1007 ER_DB_CREATE_EXISTS
-# Введите код ошибки и значение: 1010 ER_DB_DROP_RMDIR
-# Введите код ошибки и значение: ER_CANT_CREATE_FILE
-# 1004
+# Введите код ошибки и значение: ER_GIPK_COLUMN_EXISTS
+# 4108
+# УДАЛИТЬ: у вас нет этого вывода при вводе выше — не ленитесь проверять
+
+
+# Введите код ошибки и значение: 4108 ER_GIPK_COLUMN_EXISTS
+# Введите код ошибки и значение: 4107 ER_SRS_UNUSED_PROJ_PARAMETER_PRESENT
+# Введите код ошибки и значение: 1004 ER_CANT_CREATE_FILE
+# Введите код ошибки и значение: ER_CANT_CREATE_DB
+# ! value error !
 
 
 # ИТОГ: доработать — 1/3
