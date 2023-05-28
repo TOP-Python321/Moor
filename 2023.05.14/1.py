@@ -5,8 +5,7 @@ def strong_password(password: str) -> bool:
     """    
     upper_letter = False
     lower_letter = False
-    # symbols = "@#$%^&*+="
-    symbols = [chr(sym) for sym in range(33, 48)]
+    symbols = [chr(sym) for sym in range(33, 48)] # Правильно или нет, ограничился только этим набором символов
     special = False
     digit = False
     count = 0
