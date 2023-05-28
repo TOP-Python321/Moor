@@ -1,5 +1,5 @@
 # ИСПРАВИТЬ: использование replace() избыточно, можно выполнять разбивку по нужной подстроке передачей аргумента в split()
-files = input("Введите названия файлов через точку с запятой: ").replace("; ", " ").split()
+files = input("Введите названия файлов через точку с запятой: ").split("; ")
 
 files_list = []
 files_dict = {}
@@ -11,7 +11,8 @@ for f in files:
         files_list.append(f)
     else:
         # ИСПРАВИТЬ: метод find() вызывается лишний раз — оптимизируйте
-        files_list.append(f[:f.find(".")] + "_" + str(files_dict[f]) + f[f.find("."):])
+        dot = f.find(".")
+        files_list.append(f[:dot] + "_" + str(files_dict[f]) + f[dot:])
 
 print(*sorted(files_list), sep="\n")
 
