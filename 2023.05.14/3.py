@@ -3,7 +3,7 @@ def numbers_strip(sample: list, n: int = 1, copy: bool = False) -> list:
     Returns a list with the 'n' minimum and maximum numbers removed. 
     If copy=True - returns a copy of the list
     """
-    for i in range(n):
+    for _ in range(n):
         sample.remove(min(sample))
         sample.remove(max(sample))
     if copy:
