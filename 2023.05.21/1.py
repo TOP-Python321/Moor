@@ -31,7 +31,10 @@ def pick_resistors(resistance: int) -> dict | None:
         closest_value = tuple(filter(lambda x: abs(x - resistance) == differences[key], nominals[key]))
         result[key] = closest_value
         
-    return result 
+    if result: 
+        return result
+    else:
+        return None
 
 
 # >>> pick_resistors(360)
