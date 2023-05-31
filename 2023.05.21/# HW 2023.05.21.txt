@@ -100,7 +100,7 @@
 
 Пример проверки:
     >>> def testing_function():
-    ...     return 'python'
+    ...     print('python')
     ...
     >>> testing_function = repeat(testing_function)
     >>> 
