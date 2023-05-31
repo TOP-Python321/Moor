@@ -23,16 +23,17 @@ def pick_resistors(resistance: int) -> dict | None:
     :param resistance: Целое число. 
     :return: Словарь, значениями которого является кортеж.
     """
-    result = {}
-    differences = {}
-    
-    for key in nominals:
-        differences[key] = min(tuple(map(lambda x: abs(x - resistance), nominals[key])))
-        closest_value = tuple(filter(lambda x: abs(x - resistance) == differences[key], nominals[key]))
-        result[key] = closest_value
+    if 100 < resistance < 999:
+        result = {}
+        differences = {}
         
-    if result: 
+        for key in nominals:
+            differences[key] = min(tuple(map(lambda x: abs(x - resistance), nominals[key])))
+            closest_value = tuple(filter(lambda x: abs(x - resistance) == differences[key], nominals[key]))
+            result[key] = closest_value
+            
         return result
+        
     else:
         return None
 
