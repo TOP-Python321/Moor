@@ -12,10 +12,9 @@ def countable_nouns(number: int, words: tuple[str, str, str]) -> str:
         elif last_digit in [2, 3, 4]:
             return words[1]
         else:
-            return words [2]
-            
-            
-            
+            return words[2]
+
+
 # >>> countable_nouns(2, ("год", "года", "лет"))
 # 'года'
 # >>> countable_nouns(10, ("год", "года", "лет"))
@@ -26,3 +25,5 @@ def countable_nouns(number: int, words: tuple[str, str, str]) -> str:
 # 'лет'
 # >>> countable_nouns(874, ("год", "года", "лет"))
 # 'года'
+
+

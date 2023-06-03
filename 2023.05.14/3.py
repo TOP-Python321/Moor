@@ -10,8 +10,8 @@ def numbers_strip(sample: list, n: int = 1, copy: bool = False) -> list:
         return sample.copy()
     else:
         return sample
-    
-    
+
+
 # >>> sample = [1, 2, 3, 4]
 # >>> sample_stripped = numbers_strip(sample)
 # >>> sample_stripped
@@ -25,3 +25,5 @@ def numbers_strip(sample: list, n: int = 1, copy: bool = False) -> list:
 # [25, 40, 90]
 # >>> sample is sample_stripped
 # False
+
+

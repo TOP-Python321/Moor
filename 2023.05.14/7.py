@@ -2,18 +2,19 @@
 def int_base(num: str, initial: int, target: int) -> str:
     """
     Returns the string representation of the given number.
-    'num' takes string notation of a number
-    'initial' takes the source number system
-    'target' takes the target number system
-    """    
-    digits ={}
+
+    :param num: takes string notation of a number
+    :param initial: takes the source number system
+    :param target: takes the target number system
+    """
+    digits = {}
     for i in range(10):
-        digits[str(i)] = i 
+        digits[str(i)] = i
     for i in range(65, 91):
         digits[chr(i)] = i - 55
-            
-    reverse_digits = {k:v for v, k in digits.items()}
-            
+
+    reverse_digits = {k: v for v, k in digits.items()}
+
     original_number = num.upper()
     rate = len(original_number) - 1
     decimal_digits = []
@@ -23,8 +24,10 @@ def int_base(num: str, initial: int, target: int) -> str:
     for digit in original_number:
         decimal_digits.append(digits[digit])
     
+    # ПЕРЕИМЕНОВАТЬ: имена i, j, k — только для индексов!
     for i in decimal_digits:
-        decimal_number += i * (initial ** rate)
+        # ИСПОЛЬЗОВАТЬ везде: круглые скобки вокруг выражений нужны либо для многострочной записи, либо для изменения приоритетов операторов, в остальных случаях не нужны — в данном случае приоритет операторов от появления скобок не изменился
+        decimal_number += i * initial**rate
         rate -= 1
 
     while decimal_number > 0:
@@ -34,13 +37,15 @@ def int_base(num: str, initial: int, target: int) -> str:
         else:
             target_number = str(remainder_digit) + target_number
         decimal_number = decimal_number // target
-                
+
     return target_number
-    
-    
+
+
 # >>> int_base('ff00', 16, 2)
 # '1111111100000000'
 # >>> int_base('1101010', 2, 30)
 # '3G'
 # >>> int_base('3645fe6', 16, 10)
 # '56909798'
+
+

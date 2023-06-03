@@ -5,11 +5,13 @@ def strong_password(password: str) -> bool:
     """    
     upper_letter = False
     lower_letter = False
-    symbols = [chr(sym) for sym in range(33, 48)] # Правильно или нет, ограничился только этим набором символов
+    # Правильно или нет, ограничился только этим набором символов
+    symbols = [chr(sym) for sym in range(33, 48)]
     special = False
     digit = False
     count = 0
-    
+
+    # ПЕРЕИМЕНОВАТЬ: имена i, j, k — только для индексов!
     for i in password:
         if i.islower():
             lower_letter = True
@@ -21,12 +23,14 @@ def strong_password(password: str) -> bool:
             digit = True
             count += 1
     
-    if (len(password) >= 8 
+    if (
+            len(password) >= 8
         and upper_letter 
         and lower_letter 
         and special 
         and digit 
-        and count > 1):
+        and count > 1
+    ):
         return True
     else:
         return False
@@ -37,3 +41,5 @@ def strong_password(password: str) -> bool:
 
 # >>> strong_password("Pass9&word")
 # False
+
+

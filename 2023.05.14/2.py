@@ -7,7 +7,7 @@ def taxi_cost(distance: int, waiting_time: int = 0) -> int | None:
     """
     start = 80
     fine = 80
-    price_per_distance = distance * 6  // 150
+    price_per_distance = distance * 6 // 150
     price_per_waiting = waiting_time * 3
 
     total = start + price_per_distance + price_per_waiting
@@ -18,8 +18,8 @@ def taxi_cost(distance: int, waiting_time: int = 0) -> int | None:
         total = None
     
     return total 
-    
-    
+
+
 # print(taxi_cost(0, 12))
 # 196
 
@@ -28,3 +28,5 @@ def taxi_cost(distance: int, waiting_time: int = 0) -> int | None:
 
 # print(taxi_cost(2160, 8))
 # 188
+
+

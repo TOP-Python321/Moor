@@ -5,18 +5,18 @@ def orth_triangle(cathetus1: int = 0, cathetus2: int = 0, hypotenuse: int = 0) -
     is greater than one of the cathetus.
     """
     if cathetus1 and cathetus2:
-        hypotenuse = (cathetus1 ** 2 + cathetus2 ** 2) ** (1/2)
+        hypotenuse = (cathetus1**2 + cathetus2**2) ** (1/2)
         return hypotenuse
     elif hypotenuse and cathetus1 and hypotenuse > cathetus1:
-        cathetus2 = (hypotenuse ** 2 - cathetus1) ** (1/2)
+        cathetus2 = (hypotenuse**2 - cathetus1) ** (1/2)
         return cathetus2
     elif hypotenuse and cathetus2 and hypotenuse > cathetus2:
-        cathetus1 = (hypotenuse ** 2 - cathetus2) ** (1/2)
+        cathetus1 = (hypotenuse**2 - cathetus2) ** (1/2)
         return cathetus1
     else:
         return None
-        
-        
+
+
 # >>> orth_triangle(cathetus1=8, cathetus2=15)
 # 17.0
 
@@ -25,3 +25,5 @@ def orth_triangle(cathetus1: int = 0, cathetus2: int = 0, hypotenuse: int = 0) -
 
 # >>> orth_triangle(cathetus1=14, cathetus2=21)
 # 25.238858928247925
+
+
