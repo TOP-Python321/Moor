@@ -1,5 +1,6 @@
 # Пока не реализовал передачу вещественных чисел, постараюсь доделать
 def int_base(num: str, initial: int, target: int) -> str:
+    # ИСПОЛЬЗОВАТЬ: есть такой синтаксис описания параметров, называется reStructuredText, используется некоторыми IDE
     """
     Returns the string representation of the given number.
 
@@ -8,14 +9,23 @@ def int_base(num: str, initial: int, target: int) -> str:
     :param target: takes the target number system
     """
     digits = {}
+    # ПЕРЕИМЕНОВАТЬ: имена i, j, k — только для индексов!
     for i in range(10):
         digits[str(i)] = i
     for i in range(65, 91):
         digits[chr(i)] = i - 55
 
+    # ИСПОЛЬЗОВАТЬ: а ещё можно вот так:
+    codes = tuple(range(48, 58)) + tuple(range(65, 91))
+    # ИСПОЛЬЗОВАТЬ: или так:
+    # from itertools import chain
+    # codes = chain(range(48, 58), range(65, 91))
+    digits = {chr(code): i for i, code in enumerate(codes)}
     reverse_digits = {k: v for v, k in digits.items()}
 
+    # ИСПРАВИТЬ: если переменная num в своём исходном значении больше не используется, то смело перезаписывайте её, не нужно плодить лишние сущности (переменные)
     original_number = num.upper()
+    # ПЕРЕИМЕНОВАТЬ: rate — частота; степень числа — power, exponent
     rate = len(original_number) - 1
     decimal_digits = []
     decimal_number = 0
@@ -23,12 +33,24 @@ def int_base(num: str, initial: int, target: int) -> str:
     
     for digit in original_number:
         decimal_digits.append(digits[digit])
-    
+
+    # ИСПОЛЬЗОВАТЬ: или так
+    decimal_digits = [digits[ch] for ch in original_number]
+
     # ПЕРЕИМЕНОВАТЬ: имена i, j, k — только для индексов!
     for i in decimal_digits:
         # ИСПОЛЬЗОВАТЬ везде: круглые скобки вокруг выражений нужны либо для многострочной записи, либо для изменения приоритетов операторов, в остальных случаях не нужны — в данном случае приоритет операторов от появления скобок не изменился
         decimal_number += i * initial**rate
         rate -= 1
+
+    # ИСПОЛЬЗОВАТЬ: или так
+    decimal_number = sum(
+        dig * initial**exp
+        for dig, exp in zip(
+            decimal_digits,
+            range(len(original_number)-1, -1, -1)
+        )
+    )
 
     while decimal_number > 0:
         remainder_digit = decimal_number % target
@@ -49,3 +71,4 @@ def int_base(num: str, initial: int, target: int) -> str:
 # '56909798'
 
 
+# ИТОГ: очень хорошо — 5/6

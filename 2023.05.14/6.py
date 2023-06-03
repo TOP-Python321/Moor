@@ -1,3 +1,5 @@
+# ИСПРАВИТЬ: передаваемые аргументы могут также быть объектами float
+# ИСПРАВИТЬ: возвращаемое значение может быть не только объектом float
 def orth_triangle(cathetus1: int = 0, cathetus2: int = 0, hypotenuse: int = 0) -> float:
     """
     Return the third side of a triangle if the other two are known. 
@@ -8,9 +10,11 @@ def orth_triangle(cathetus1: int = 0, cathetus2: int = 0, hypotenuse: int = 0) -
         hypotenuse = (cathetus1**2 + cathetus2**2) ** (1/2)
         return hypotenuse
     elif hypotenuse and cathetus1 and hypotenuse > cathetus1:
+        # ИСПРАВИТЬ: катет тоже должен быть возведён в квадрат
         cathetus2 = (hypotenuse**2 - cathetus1) ** (1/2)
         return cathetus2
     elif hypotenuse and cathetus2 and hypotenuse > cathetus2:
+        # ИСПРАВИТЬ: катет тоже должен быть возведён в квадрат
         cathetus1 = (hypotenuse**2 - cathetus2) ** (1/2)
         return cathetus1
     else:
@@ -27,3 +31,4 @@ def orth_triangle(cathetus1: int = 0, cathetus2: int = 0, hypotenuse: int = 0) -
 # 25.238858928247925
 
 
+# ИТОГ: почти хорошо, но надо внимательнее — 2/4

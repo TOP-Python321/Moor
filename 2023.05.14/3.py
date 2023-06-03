@@ -4,8 +4,10 @@ def numbers_strip(sample: list, n: int = 1, copy: bool = False) -> list:
     If copy=True - returns a copy of the list
     """
     for _ in range(n):
+        # КОММЕНТАРИЙ: метод remove() изменяет список, к которому применяется
         sample.remove(min(sample))
         sample.remove(max(sample))
+    # ИСПРАВИТЬ: поэтому при постфактум проверке, даже если copy=True, вы уже изменили исходный список (см. пример ниже)
     if copy:
         return sample.copy()
     else:
@@ -18,6 +20,9 @@ def numbers_strip(sample: list, n: int = 1, copy: bool = False) -> list:
 # [2, 3]
 # >>> sample is sample_stripped
 # True
+# >>> sample
+# КОММЕНТАРИЙ: при copy=True этот список должен остаться неизменным
+# [2, 3]
 
 # >>> sample = [10, 20, 25, 40, 90, 110, 120]
 # >>> sample_stripped = numbers_strip(sample, 2, copy=True)
@@ -27,3 +32,4 @@ def numbers_strip(sample: list, n: int = 1, copy: bool = False) -> list:
 # False
 
 
+# ИТОГ: доработать — 2/4
