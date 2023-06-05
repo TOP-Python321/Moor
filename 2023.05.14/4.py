@@ -11,11 +11,11 @@ def countable_nouns(number: int, words: tuple[str, str, str]) -> str:
             return words[0]
         elif last_digit in [2, 3, 4]:
             return words[1]
+        # ИСПРАВИТЬ: как бы вот этот блок else логически объединить с самым первым блоком if, в котором возвращается такое же значение? может и проверок получится поменьше
         else:
-            return words [2]
-            
-            
-            
+            return words[2]
+
+
 # >>> countable_nouns(2, ("год", "года", "лет"))
 # 'года'
 # >>> countable_nouns(10, ("год", "года", "лет"))
@@ -26,3 +26,6 @@ def countable_nouns(number: int, words: tuple[str, str, str]) -> str:
 # 'лет'
 # >>> countable_nouns(874, ("год", "года", "лет"))
 # 'года'
+
+
+# ИТОГ: хорошо, немного доработать — 3/4
