@@ -1,9 +1,10 @@
 # ИСПРАВИТЬ: согласно условию, функция должна принять минимум два числа — а сейчас её можно вызвать и вовсе не передав ни одного аргумента, или передав только один (см. пример ниже)
 # ИСПОЛЬЗОВАТЬ: для произвольного кортежа позиционных аргументов аннотируется сразу тип элементов (кортежем-то он всегда будет)
-def central_tendency(*sample: float) -> dict[str, float]:
+def central_tendency(num1: float, num2: float, *others_num: float) -> dict[str, float]:
     """
     Returns a dictionary with computed central trend measure values
     """
+    sample = sorted((num1, num2) + others_num)
     length_of_tuple = len(sample)
     i_half = length_of_tuple // 2
     arithmetic = sum(sample) / length_of_tuple
@@ -11,15 +12,15 @@ def central_tendency(*sample: float) -> dict[str, float]:
     numerator_sum = 0
     
     if length_of_tuple % 2:
-        median = float(sorted(sample)[i_half])
+        median = float(sample[i_half])
     else:
-        median = sum(sorted(sample)[i_half-1:i_half+1]) / 2
+        median = sum(sample[i_half-1:i_half+1]) / 2
 
     # ПЕРЕИМЕНОВАТЬ: имена i, j, k — только для индексов!
-    for i in sample:
+    for num in sample:
         # КОММЕНТАРИЙ: очень хороший подход через один цикл!
-        multiplied *= i 
-        numerator_sum += 1 / i
+        multiplied *= num
+        numerator_sum += 1 / num
     geometric = multiplied ** (1/length_of_tuple)
     harmonic = length_of_tuple / numerator_sum
     
@@ -48,5 +49,9 @@ def central_tendency(*sample: float) -> dict[str, float]:
 # КОММЕНТАРИЙ: а должно быть TypeError из-за пропущенных обязательных аргументов
 # ZeroDivisionError: division by zero
 
+# >>> central_tendency()
+# Traceback (most recent call last):
+  # File "<stdin>", line 1, in <module>
+# TypeError: central_tendency() missing 2 required positional arguments: 'num1' and 'num2'
 
 # ИТОГ: хорошо, доработать — 4/6
