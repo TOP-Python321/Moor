@@ -7,9 +7,9 @@ def deck() -> 'generator':
     rating = [i for i in range(2, 15)]
     deck_of_cards = ['черви', 'бубны', 'пики', 'трефы']
     
-    for i in deck_of_cards:
-        for j in rating:
-            yield (j, i)
+    for card in deck_of_cards:
+        for rate in rating:
+            yield (rate, card)
             
             
 # >>> list(deck())[::13]
