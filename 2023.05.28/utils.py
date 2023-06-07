@@ -35,7 +35,7 @@ def important_message(text: str) -> str:
         header += row
     header += f"{empty_line}\n{lines}"
     
-    print(header)
+    return header
     
     
 def load_file(path: str):
