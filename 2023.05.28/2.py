@@ -6,7 +6,7 @@ def main():
     Функция выводит текст сообщения запрошенное от пользователя.
     """
     message = input('Текст сообщения: ')
-    important_message(message)
+    print(important_message(message))
     
     return None
 # >>> main()
