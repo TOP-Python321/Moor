@@ -11,12 +11,12 @@ def taxi_cost(distance: int, waiting_time: int = 0) -> int | None:
     total = start + price_per_distance + price_per_waiting
 
     # ИСПРАВИТЬ: а нужна ли эта проверка? всегда думал, что ноль при умножении и делении на любые другие числа даёт ноль
-    if distance == 0:
-        total = start + fine + price_per_waiting
     # ИСПРАВИТЬ: почему только расстояние? (см. пример ниже)
     # ИСПРАВИТЬ: ещё такой момент: если вам были переданы отрицательные числа, то надо ли проводить вычисления выше? такого рода проверки должны быть в самом начале тела функции: чуть что — return None
-    elif distance < 0:
+    if distance < 0 or waiting_time < 0:
         total = None
+    elif distance == 0:
+        total += fine
     
     return total 
 
@@ -35,6 +35,9 @@ def taxi_cost(distance: int, waiting_time: int = 0) -> int | None:
 # КОММЕНТАРИЙ: тоже так хочу: таксист ждал меня минус десять минут, а я заплатил меньше
 # taxi_cost(1000, -10)
 # 90
+
+# >>> print(taxi_cost(1000, -10))
+# None
 
 
 # ИТОГ: можно лучше, доработать — 2/4
