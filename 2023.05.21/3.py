@@ -10,8 +10,8 @@ def math_function_resolver(operation: 'callable', *args: tuple[float], strings: 
     """
     result = []
     
-    for i in args:
-        num = operation(i)
+    for arg in args:
+        num = operation(arg)
         if strings:
             num = str(round(num, 2))
         result.append(round(num, 2))
