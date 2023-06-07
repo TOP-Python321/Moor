@@ -7,23 +7,18 @@ def strong_password(password: str) -> bool:
     lower_letter = False
     # Правильно или нет, ограничился только этим набором символов
     # ИСПРАВИТЬ: корректнее было бы сделать множества символов букв и цифр — всё, что в них не входит, это доп.символы
-    symbols = [chr(sym) for sym in range(33, 48)]
+    symbols = {chr(sym) for sym in range(65, 123)} | {sym for sym in range(10)}
     special = False
     digit = False
     count = 0
+    result = False
 
     # ПЕРЕИМЕНОВАТЬ: имена i, j, k — только для индексов!
-    for i in password:
+    for sym in password:
         # УДАЛИТЬ: думается мне, что первые две проверки избыточны на каждом символе
-        if i.islower():
-            lower_letter = True
-        elif i.isupper():
-            upper_letter = True
         # ИСПОЛЬЗОВАТЬ: мы ожидаем, что в special будет объект bool, верно? тогда ничего не мешает сразу результат вычисления логического выражения присвоить в эту переменную, без лишних проверок
-        # special = i in symbols
-        elif i in symbols:
-            special = True
-        elif i.isdigit():
+        special = sym not in symbols
+        if sym.isdigit():
             digit = True
             count += 1
 
@@ -41,10 +36,9 @@ def strong_password(password: str) -> bool:
         and digit 
         and count > 1
     ):
-        return True
-    else:
-        return False
+        result = True
 
+    return result
 
 # >>> strong_password("Qwer*ty12")
 # True
