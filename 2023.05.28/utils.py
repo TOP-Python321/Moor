@@ -30,10 +30,10 @@ def important_message(text: str) -> str:
     text_rows.append(f'#{row.center(117)}#\n')
     rows = ''.join(text_rows)
             
-    header = f"{lines}\n{empty_line}\n"
+    header = f"\n\n{lines}\n{empty_line}\n"
     for row in text_rows:
         header += row
-    header += f"{empty_line}\n{lines}"
+    header += f"{empty_line}\n{lines}\n\n"
     
     return header
     
