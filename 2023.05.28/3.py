@@ -1,9 +1,10 @@
 from pathlib import Path
+import types
 
 from utils import load_file
 
 
-def ask_for_file():
+def ask_for_file() -> types.ModuleType:
     """
     Функция запрашивает у пользователя путь к потерянному файлу и вызывает импортированный объект модуля.
     
