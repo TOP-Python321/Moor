@@ -11,7 +11,7 @@ def list_files(user_path: str) -> tuple | None:
     path = Path(user_path)
     files = tuple((file.name for file in path.glob('*') if file.is_file()))
     
-    return files if len(files) > 0 else None   
+    return files if len(files) > 0   
     
     
     
