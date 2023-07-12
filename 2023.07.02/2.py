@@ -23,7 +23,7 @@ class PowerMeter:
     def __str__(self):
         return f'({self.month}) {self.charges[self.month]}'
 
-    def meter(self, power: numbers.Number):
+    def meter(self, power: numbers.Number) -> Decimal:
         """
         Вычисляет и возвращает стоимость согласно тарифному плану, действующему в текущий момент.
 
