@@ -33,7 +33,7 @@ class ChessKing:
     def turn(self, new_square: str) -> None:
         """
         Выполняет ход, выбрасывает ValueError в случае невозможности выполнить ход.
-        :param new_square:
+        :param new_square: строка нового поля.
         """
         if not self.is_turn_valid(new_square):
             raise ValueError
