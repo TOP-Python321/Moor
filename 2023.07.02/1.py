@@ -2,6 +2,9 @@ from math import sqrt
 
 
 class Tetrahedron:
+    """
+    Описывает правильный тетраэдр.
+    """
     def __init__(self, edge: float):
         self.edge = float(edge)
 
