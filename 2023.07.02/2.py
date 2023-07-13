@@ -4,6 +4,9 @@ from decimal import Decimal
 
 
 class PowerMeter:
+    """
+    Описывает двух тарифный счётчик потреблённой электрической мощности.
+    """
     def __init__(self,
                  tariff1: numbers.Number = 6,
                  tariff2: numbers.Number = 4,
@@ -13,9 +16,9 @@ class PowerMeter:
         self.tariff2 = Decimal(str(tariff2))
         self.tariff2_starts = tariff2_starts
         self.tariff2_ends = tariff2_ends
-        self.power = Decimal('0').quantize(Decimal('1.00'))
-        self.month = datetime.date.today().strftime("%B")
-        self.charges = {self.month: self.power}
+        self.power: Decimal = Decimal('0').quantize(Decimal('1.00'))
+        self.month: datetime = datetime.date.today().strftime("%B")
+        self.charges: dict[datetime: Decimal] = {self.month: self.power}
 
     def __repr__(self):
         return f'<PowerMeter: {float(self.power)} кВт/ч>'
@@ -28,6 +31,7 @@ class PowerMeter:
         Вычисляет и возвращает стоимость согласно тарифному плану, действующему в текущий момент.
 
         :arg power: значение потреблённой мощности.
+        :return: стоимость согласно тарифному плану.
         """
         current_time = datetime.datetime.now().time()
         self.power += power
