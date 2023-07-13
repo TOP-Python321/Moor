@@ -1,6 +1,9 @@
 class ChessKing:
-    files = {chr(ord('a') + i): i + 1 for i in range(8)}
-    ranks = {str(i): i for i in range(1, 9)}
+    """
+    Описывает шахматную фигуру короля.
+    """
+    files: dict[str, int] = {chr(ord('a') + i): i + 1 for i in range(8)}
+    ranks: dict[str, int] = {str(i): i for i in range(1, 9)}
 
     def __init__(self, color: str = 'white', square: str = None):
         self.color = color
@@ -24,8 +27,8 @@ class ChessKing:
         :param new_square: строка нового поля.
         :return: bool
         """
-        file = new_square[0]
-        rank = new_square[1]
+        file: str = new_square[0]
+        rank: str = new_square[1]
         if (abs(self.files[self.square[0]] - self.files[file]) <= 1
                 and abs(self.ranks[self.square[1]] - self.ranks[rank]) <= 1):
             return True
