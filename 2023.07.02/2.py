@@ -17,14 +17,14 @@ class PowerMeter:
         self.tariff2_starts = tariff2_starts
         self.tariff2_ends = tariff2_ends
         self.power: Decimal = Decimal('0').quantize(Decimal('1.00'))
-        self.month: datetime = datetime.date.today().strftime("%B")
+        self.month: datetime = datetime.date.today().strftime("%B-%Y")
         self.charges: dict[datetime: Decimal] = {self.month: self.power}
 
     def __repr__(self):
         return f'<PowerMeter: {float(self.power)} кВт/ч>'
 
     def __str__(self):
-        return f'({self.month}) {self.charges[self.month]}'
+        return f'({datetime.date.today().strftime("%B")}) {self.charges[self.month]}'
 
     def meter(self, power: numbers.Number) -> Decimal:
         """
