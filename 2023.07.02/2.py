@@ -33,6 +33,7 @@ class PowerMeter:
         :arg power: значение потреблённой мощности.
         :return: стоимость согласно тарифному плану.
         """
+        power = Decimal(str(power))
         current_time = datetime.datetime.now().time()
         self.power += power
         if self.tariff2_ends < current_time < self.tariff2_starts:
