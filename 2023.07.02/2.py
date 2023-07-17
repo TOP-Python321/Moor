@@ -12,8 +12,8 @@ class PowerMeter:
                  tariff2: numbers.Number = 4,
                  tariff2_starts: datetime.time = datetime.time(22),
                  tariff2_ends: datetime.time = datetime.time(6)):
-        self.tariff1 = Decimal(str(tariff1))
-        self.tariff2 = Decimal(str(tariff2))
+        self.tariff1: Decimal = Decimal(str(tariff1))
+        self.tariff2: Decimal = Decimal(str(tariff2))
         self.tariff2_starts = tariff2_starts
         self.tariff2_ends = tariff2_ends
         self.power: Decimal = Decimal('0').quantize(Decimal('1.00'))
@@ -33,7 +33,7 @@ class PowerMeter:
         :arg power: значение потреблённой мощности.
         :return: стоимость согласно тарифному плану.
         """
-        power = Decimal(str(power))
+        power: Decimal = Decimal(str(power))
         current_time = datetime.datetime.now().time()
         self.power += power
         if self.tariff2_ends < current_time < self.tariff2_starts:
