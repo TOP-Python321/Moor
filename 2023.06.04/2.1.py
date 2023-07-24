@@ -18,16 +18,6 @@ def check_vacation(current_date: datetime.date) -> list[bool]:
     return dates
 
 
-def check_days(current_date: datetime.date, days: list) -> bool:
-    """
-    Проверяет, соответствует ли текущая дата указанным дням недели.
-    :param current_date: текущая дата
-    :param days: день недели
-    :return: bool
-    """
-    return current_date.isoweekday() in days
-
-
 def schedule(start: datetime.date,
              *days: int | tuple[int, int, ...],
              total_days: int,
