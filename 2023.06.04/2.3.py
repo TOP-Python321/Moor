@@ -1,5 +1,3 @@
-import datetime
-import pathlib
 from datetime import datetime as dt
 from pathlib import Path
 from random import randrange, choice, randint, sample, choices
@@ -7,9 +5,9 @@ import re
 import string
 
 
-female: pathlib.Path = Path('женские_имена.txt')
-male_patronymic: pathlib.Path = Path('мужские_имена_отчества.txt')
-surnames: pathlib.Path = Path('фамилии.txt')
+female: Path = Path('женские_имена.txt')
+male_patronymic: Path = Path('мужские_имена_отчества.txt')
+surnames: Path = Path('фамилии.txt')
 
 names: dict[str, list[str]] = {}
 
