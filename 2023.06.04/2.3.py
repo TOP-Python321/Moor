@@ -1,3 +1,4 @@
+from typing import Literal
 from datetime import datetime as dt
 from pathlib import Path
 from random import randrange, choice, randint, sample, choices
@@ -69,7 +70,7 @@ def generate_person() -> dict[str: str]:
     random_date: str = generate_date()
     mail: str = generate_email()
     number: str = ''.join(sample('0123456789', k=9))
-    person = {
+    person: dict = {
         'имя': choice(names['female_names']),
         'отчество': choice(names['female_patronymics']),
         'фамилия': choice(names['female_surnames']),
@@ -82,7 +83,7 @@ def generate_person() -> dict[str: str]:
         person['имя'] = choice(names['male_names'])
         person['отчество'] = choice(names['male_patronymics'])
         person['фамилия'] = choice(names['male_surnames'])
-
+        person['пол'] = 'мужской'
     return person
 
 # >>> from pprint import pprint
@@ -90,19 +91,19 @@ def generate_person() -> dict[str: str]:
 # >>> load_data()
 # >>>
 # >>> pprint(generate_person(), sort_dicts=False)
-# {'имя': 'Вонифатий ',
-#  'отчество': 'Наумович',
-#  'фамилия': 'Еремеев',
+# {'имя': 'Лукреция',
+#  'отчество': 'Харламповна',
+#  'фамилия': 'Думчева',
 #  'пол': 'женский',
-#  'дата рождения': '1948-03-13',
-#  'электронная почта': 'gsoycajouv@yandex.ru',
-#  'мобильный': '+79234905167'}
+#  'дата рождения': '1953-07-06',
+#  'электронная почта': 'aburbucx@msn.com',
+#  'мобильный': '+79719208456'}
 # >>>
 # >>> pprint(generate_person(), sort_dicts=False)
-# {'имя': 'Патрикий ',
-#  'отчество': 'Дмитриевич',
-#  'фамилия': 'Нарциссов',
-#  'пол': 'женский',
-#  'дата рождения': '2010-02-19',
-#  'электронная почта': 'tsssield@hotmail.com',
-#  'мобильный': '+79015278936'}
+# {'имя': 'Меркул ',
+#  'отчество': 'Софониевич',
+#  'фамилия': 'Ядрышников',
+#  'пол': 'мужской',
+#  'дата рождения': '1970-10-04',
+#  'электронная почта': 'uzvuo@gmail.com',
+#  'мобильный': '+79497058316'}
