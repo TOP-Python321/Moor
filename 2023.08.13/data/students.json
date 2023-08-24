@@ -1,0 +1,1002 @@
+[
+  {
+    "last_name": "Коновалова",
+    "first_name": "Болеслава",
+    "patr_name": "Патрикиевна",
+    "sex": "женский",
+    "birthdate": "08.03.2004",
+    "contacts": "+79307586241",
+    "student_id": "4LGF7CI9PO2V",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Грацианская",
+    "first_name": "Маргарита",
+    "patr_name": "Эммануиловна",
+    "sex": "женский",
+    "birthdate": "06.06.2005",
+    "contacts": "+79253618974",
+    "student_id": "FRIXT34ZKQHP",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Розов",
+    "first_name": "Пармен",
+    "patr_name": "Нилович",
+    "sex": "мужской",
+    "birthdate": "19.03.2005",
+    "contacts": "+79705698314",
+    "student_id": "OD3KEFNHX78W",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Наумов",
+    "first_name": "Май",
+    "patr_name": "Власович",
+    "sex": "мужской",
+    "birthdate": "29.10.2004",
+    "contacts": "+79583712940",
+    "student_id": "1Y9MVLUWSCKJ",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Амурская",
+    "first_name": "Анисия",
+    "patr_name": "Демидовна",
+    "sex": "женский",
+    "birthdate": "21.12.2005",
+    "contacts": "+79469218730",
+    "student_id": "ZKM8JWIOVE4N",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Ушанская",
+    "first_name": "Кристина",
+    "patr_name": "Ксенофонтовна",
+    "sex": "женский",
+    "birthdate": "01.03.2004",
+    "contacts": "+79032918756",
+    "student_id": "6T4OINCEZUJF",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Маковецкая",
+    "first_name": "Элиза",
+    "patr_name": "Вячеславовна",
+    "sex": "женский",
+    "birthdate": "31.07.2006",
+    "contacts": "+79073289154",
+    "student_id": "Q1ITHSFZ6AN3",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Симонов",
+    "first_name": "Игнат",
+    "patr_name": "Егориевич",
+    "sex": "мужской",
+    "birthdate": "12.03.2005",
+    "contacts": "+79904268153",
+    "student_id": "RDN32BTFJQ64",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Звездинский",
+    "first_name": "Памфилий",
+    "patr_name": "Максимилианович",
+    "sex": "мужской",
+    "birthdate": "22.07.2006",
+    "contacts": "+79614982537",
+    "student_id": "0TQGU176JDLE",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Муромова",
+    "first_name": "Ярослава",
+    "patr_name": "Самсоновна",
+    "sex": "женский",
+    "birthdate": "01.06.2004",
+    "contacts": "+79354789260",
+    "student_id": "KUHLOWGSY5A0",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Елагина",
+    "first_name": "Сакина",
+    "patr_name": "Титовна",
+    "sex": "женский",
+    "birthdate": "24.05.2004",
+    "contacts": "+79371056428",
+    "student_id": "V3OHXGLCMDKA",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Тимофеева",
+    "first_name": "Евдоксия",
+    "patr_name": "Палладиевна",
+    "sex": "женский",
+    "birthdate": "14.04.2004",
+    "contacts": "+79940673518",
+    "student_id": "WJ2MYTRHQ51B",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Можайский",
+    "first_name": "Викторий",
+    "patr_name": "Поликарпович",
+    "sex": "мужской",
+    "birthdate": "23.12.2006",
+    "contacts": "+79264830951",
+    "student_id": "6OIVJPQG4KLY",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Юрковский",
+    "first_name": "Софон",
+    "patr_name": "Афиногенович",
+    "sex": "мужской",
+    "birthdate": "23.01.2006",
+    "contacts": "+79652074138",
+    "student_id": "WC30HPI6QUOE",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Поднебесная",
+    "first_name": "Виталия",
+    "patr_name": "Протасиевна",
+    "sex": "женский",
+    "birthdate": "04.02.2005",
+    "contacts": "+79435721806",
+    "student_id": "W3N4SEC98OGU",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Кручинин",
+    "first_name": "Кондратий",
+    "patr_name": "Ярославович",
+    "sex": "мужской",
+    "birthdate": "09.12.2005",
+    "contacts": "+79183576294",
+    "student_id": "L6W59A7USJX0",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Снежинский",
+    "first_name": "Ипполит",
+    "patr_name": "Прохорович",
+    "sex": "мужской",
+    "birthdate": "16.06.2005",
+    "contacts": "+79198562740",
+    "student_id": "ND6S2YP50J1E",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Юпитеров",
+    "first_name": "Иустин",
+    "patr_name": "Аполлинариевич",
+    "sex": "мужской",
+    "birthdate": "22.07.2004",
+    "contacts": "+79807615429",
+    "student_id": "E96JCR35SOTI",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Краснова",
+    "first_name": "Любомира",
+    "patr_name": "Рафаиловна",
+    "sex": "женский",
+    "birthdate": "02.11.2005",
+    "contacts": "+79192583704",
+    "student_id": "P702DAFEHWJC",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Нежинская",
+    "first_name": "Флавия",
+    "patr_name": "Матвеевна",
+    "sex": "женский",
+    "birthdate": "10.02.2006",
+    "contacts": "+79716542803",
+    "student_id": "8Z720Q41UBDG",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Шадрина",
+    "first_name": "Лилия",
+    "patr_name": "Карповна",
+    "sex": "женский",
+    "birthdate": "06.07.2006",
+    "contacts": "+79532871406",
+    "student_id": "JQYNFL20B4RT",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Колосовская",
+    "first_name": "Фируза",
+    "patr_name": "Ефимиевна",
+    "sex": "женский",
+    "birthdate": "21.04.2004",
+    "contacts": "+79930874216",
+    "student_id": "JGO27W4AZNPU",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Жарковский",
+    "first_name": "Акинфий",
+    "patr_name": "Эмилиевич",
+    "sex": "мужской",
+    "birthdate": "19.07.2004",
+    "contacts": "+79816502437",
+    "student_id": "G4CN2U05RXSA",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Сибирский",
+    "first_name": "Абросим",
+    "patr_name": "Никандрович",
+    "sex": "мужской",
+    "birthdate": "16.09.2004",
+    "contacts": "+79105987342",
+    "student_id": "FXQ95BGIS7UH",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Шпажинская",
+    "first_name": "Лампеция",
+    "patr_name": "Аникеевна",
+    "sex": "женский",
+    "birthdate": "19.01.2005",
+    "contacts": "+79741890256",
+    "student_id": "KZIM5EC2ORH3",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Шестакова",
+    "first_name": "Ирида",
+    "patr_name": "Савёловна",
+    "sex": "женский",
+    "birthdate": "13.12.2005",
+    "contacts": "+79524960873",
+    "student_id": "K3RVXJUM5H4Y",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Белозёрская",
+    "first_name": "Эрика",
+    "patr_name": "Евстигнеевна",
+    "sex": "женский",
+    "birthdate": "20.01.2005",
+    "contacts": "+79673401258",
+    "student_id": "P20XDVY56M8R",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Верещагина",
+    "first_name": "Рафа",
+    "patr_name": "Маврикиевна",
+    "sex": "женский",
+    "birthdate": "25.01.2005",
+    "contacts": "+79748093126",
+    "student_id": "3WQCMJAXPGVD",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Гедианова",
+    "first_name": "Муна",
+    "patr_name": "Маевна",
+    "sex": "женский",
+    "birthdate": "10.03.2005",
+    "contacts": "+79123509648",
+    "student_id": "Y0WBIASKQ82J",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Волконская",
+    "first_name": "Сильва",
+    "patr_name": "Юлиевна",
+    "sex": "женский",
+    "birthdate": "19.12.2004",
+    "contacts": "+79498216735",
+    "student_id": "LU3S1GIA2HQC",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Марков",
+    "first_name": "Викул",
+    "patr_name": "Егорович",
+    "sex": "мужской",
+    "birthdate": "11.09.2006",
+    "contacts": "+79378062159",
+    "student_id": "VNPUJZW58ERB",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Людмилова",
+    "first_name": "Марьям",
+    "patr_name": "Викуловна",
+    "sex": "женский",
+    "birthdate": "16.02.2006",
+    "contacts": "+79970316254",
+    "student_id": "KUDVCW7J2QSX",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Бисарова",
+    "first_name": "Ада",
+    "patr_name": "Тимуровна",
+    "sex": "женский",
+    "birthdate": "01.12.2005",
+    "contacts": "+79853107924",
+    "student_id": "1ZJ62TG9MUOL",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Сербский",
+    "first_name": "Адам",
+    "patr_name": "Мартынович",
+    "sex": "мужской",
+    "birthdate": "11.02.2006",
+    "contacts": "+79629815034",
+    "student_id": "SNFL82IRDQJP",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Смоленская",
+    "first_name": "Иоанна",
+    "patr_name": "Кондратьевна",
+    "sex": "женский",
+    "birthdate": "20.07.2006",
+    "contacts": "+79654832190",
+    "student_id": "M9OBWIQVDX0L",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Даровская",
+    "first_name": "Виталина",
+    "patr_name": "Ярославовна",
+    "sex": "женский",
+    "birthdate": "12.02.2004",
+    "contacts": "+79061798453",
+    "student_id": "31HFCIQN5PAM",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Жарковский",
+    "first_name": "Симон",
+    "patr_name": "Меркуриевич",
+    "sex": "мужской",
+    "birthdate": "29.04.2005",
+    "contacts": "+79738096512",
+    "student_id": "6O2E4S1CANMH",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Михалевич",
+    "first_name": "Улита",
+    "patr_name": "Поликарпиевна",
+    "sex": "женский",
+    "birthdate": "17.05.2005",
+    "contacts": "+79016487392",
+    "student_id": "V0ZA8PB25Q7C",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Златопольский",
+    "first_name": "Пантелеймон",
+    "patr_name": "Виленинович",
+    "sex": "мужской",
+    "birthdate": "04.02.2005",
+    "contacts": "+79395641728",
+    "student_id": "6K0YSG82CPD1",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Пешков",
+    "first_name": "Лев",
+    "patr_name": "Акимович",
+    "sex": "мужской",
+    "birthdate": "11.09.2005",
+    "contacts": "+79123907485",
+    "student_id": "6LNFRD1BK9H4",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Шереметьева",
+    "first_name": "Берта",
+    "patr_name": "Гермогеновна",
+    "sex": "женский",
+    "birthdate": "07.10.2004",
+    "contacts": "+79432160587",
+    "student_id": "2TYG5ZRPQH70",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Львовская",
+    "first_name": "Виталина",
+    "patr_name": "Варламиевна",
+    "sex": "женский",
+    "birthdate": "25.03.2004",
+    "contacts": "+79073914256",
+    "student_id": "XH7ZJEWUKQG8",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Добровольская",
+    "first_name": "Рашида",
+    "patr_name": "Власовна",
+    "sex": "женский",
+    "birthdate": "28.02.2006",
+    "contacts": "+79478162039",
+    "student_id": "INW5UZVSP20L",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Кокко",
+    "first_name": "Пармен",
+    "patr_name": "Макарович",
+    "sex": "мужской",
+    "birthdate": "16.04.2006",
+    "contacts": "+79183924605",
+    "student_id": "57NM3QTKXR2I",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Громов",
+    "first_name": "Ефремий",
+    "patr_name": "Парфентьевич",
+    "sex": "мужской",
+    "birthdate": "13.08.2004",
+    "contacts": "+79904815367",
+    "student_id": "NB7Q0VLAWE86",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Лёвин",
+    "first_name": "Фока",
+    "patr_name": "Федотиевич",
+    "sex": "мужской",
+    "birthdate": "15.05.2006",
+    "contacts": "+79682503419",
+    "student_id": "E3MXRAQ6WTP9",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Ястремский",
+    "first_name": "Евстрат",
+    "patr_name": "Акимович",
+    "sex": "мужской",
+    "birthdate": "31.10.2004",
+    "contacts": "+79761538420",
+    "student_id": "EYBR2XV13O0D",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Рубенцов",
+    "first_name": "Ефремий",
+    "patr_name": "Августович",
+    "sex": "мужской",
+    "birthdate": "04.04.2005",
+    "contacts": "+79860935214",
+    "student_id": "KD8A59XYSEVZ",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Долин",
+    "first_name": "Мартын",
+    "patr_name": "Николаевич",
+    "sex": "мужской",
+    "birthdate": "11.08.2006",
+    "contacts": "+79547839106",
+    "student_id": "XL73KZVAQJBU",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Барон",
+    "first_name": "Мерседес",
+    "patr_name": "Денисиевна",
+    "sex": "женский",
+    "birthdate": "28.05.2005",
+    "contacts": "+79682304597",
+    "student_id": "QTX7NHMWYDRV",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Голованова",
+    "first_name": "Айгуль",
+    "patr_name": "Власиевна",
+    "sex": "женский",
+    "birthdate": "25.06.2004",
+    "contacts": "+79784129360",
+    "student_id": "CY0FAINJURES",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Белокрылова",
+    "first_name": "Элиза",
+    "patr_name": "Евстахиевна",
+    "sex": "женский",
+    "birthdate": "19.03.2004",
+    "contacts": "+79026519843",
+    "student_id": "NCJFQERLKAI3",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Королёв",
+    "first_name": "Савватий",
+    "patr_name": "Виталиевич",
+    "sex": "мужской",
+    "birthdate": "14.01.2005",
+    "contacts": "+79341978625",
+    "student_id": "31WFO2GZJCSB",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Смирновский",
+    "first_name": "Варлам",
+    "patr_name": "Устинович",
+    "sex": "мужской",
+    "birthdate": "11.12.2006",
+    "contacts": "+79293058461",
+    "student_id": "IK6XFNYTW8LR",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Михайловский",
+    "first_name": "Давид",
+    "patr_name": "Викентиевич",
+    "sex": "мужской",
+    "birthdate": "01.11.2004",
+    "contacts": "+79294538716",
+    "student_id": "DIA429YBJ1W0",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Болконская",
+    "first_name": "Анисия",
+    "patr_name": "Глебовна",
+    "sex": "женский",
+    "birthdate": "10.08.2006",
+    "contacts": "+79482316759",
+    "student_id": "HXK3IEY7Z4CJ",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Сталь",
+    "first_name": "Иаким",
+    "patr_name": "Демьянович",
+    "sex": "мужской",
+    "birthdate": "10.07.2006",
+    "contacts": "+79514382670",
+    "student_id": "M04DRUBCKF12",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Шведова",
+    "first_name": "Камилла",
+    "patr_name": "Осиповна",
+    "sex": "женский",
+    "birthdate": "17.09.2004",
+    "contacts": "+79820945763",
+    "student_id": "87QU65E4OIC9",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Лисовская",
+    "first_name": "Зухра",
+    "patr_name": "Аверьяновна",
+    "sex": "женский",
+    "birthdate": "24.07.2005",
+    "contacts": "+79384501697",
+    "student_id": "ZAOL8K9PM47C",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Кокко",
+    "first_name": "Богдана",
+    "patr_name": "Глебовна",
+    "sex": "женский",
+    "birthdate": "14.01.2006",
+    "contacts": "+79875642390",
+    "student_id": "ZMVS02475FG8",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Крымский",
+    "first_name": "Трофим",
+    "patr_name": "Адрианович",
+    "sex": "мужской",
+    "birthdate": "20.01.2006",
+    "contacts": "+79375246908",
+    "student_id": "SCYPLV4W1563",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Богатырёв",
+    "first_name": "Мартьян",
+    "patr_name": "Савелиевич",
+    "sex": "мужской",
+    "birthdate": "26.12.2004",
+    "contacts": "+79850437629",
+    "student_id": "K6O3N8RB4ES5",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Ивашковский",
+    "first_name": "Степан",
+    "patr_name": "Денисиевич",
+    "sex": "мужской",
+    "birthdate": "01.12.2005",
+    "contacts": "+79153087642",
+    "student_id": "MEJ6CYSUPR79",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Павловский",
+    "first_name": "Анисий",
+    "patr_name": "Леонардович",
+    "sex": "мужской",
+    "birthdate": "20.07.2004",
+    "contacts": "+79715638049",
+    "student_id": "0UE8JL9TFX5B",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Удальцова",
+    "first_name": "Епистимия",
+    "patr_name": "Олимпиевна",
+    "sex": "женский",
+    "birthdate": "22.07.2006",
+    "contacts": "+79056843219",
+    "student_id": "F1WJ2XYS9BNG",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Снегирёв",
+    "first_name": "Прокофий",
+    "patr_name": "Климентович",
+    "sex": "мужской",
+    "birthdate": "08.12.2004",
+    "contacts": "+79927381465",
+    "student_id": "ZXNESBWTI06R",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Красин",
+    "first_name": "Денис",
+    "patr_name": "Несторович",
+    "sex": "мужской",
+    "birthdate": "28.08.2006",
+    "contacts": "+79473210598",
+    "student_id": "I2NDZL5YUV7A",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Ягофарова",
+    "first_name": "Серафима",
+    "patr_name": "Патрикиевна",
+    "sex": "женский",
+    "birthdate": "13.10.2004",
+    "contacts": "+79819403256",
+    "student_id": "DFLRQ1U3S740",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Златоустовский",
+    "first_name": "Вонифатий",
+    "patr_name": "Сысоевич",
+    "sex": "мужской",
+    "birthdate": "21.01.2004",
+    "contacts": "+79659403827",
+    "student_id": "3JK4O8E5DUC0",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Пахмутова",
+    "first_name": "Берислава",
+    "patr_name": "Викентиевна",
+    "sex": "женский",
+    "birthdate": "27.11.2004",
+    "contacts": "+79716934250",
+    "student_id": "9VJDYUW85LRM",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Крапивин",
+    "first_name": "Капитон",
+    "patr_name": "Романович",
+    "sex": "мужской",
+    "birthdate": "30.06.2006",
+    "contacts": "+79274695013",
+    "student_id": "DPZU3NRXVM7Y",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Гранин",
+    "first_name": "Никанор",
+    "patr_name": "Иустинович",
+    "sex": "мужской",
+    "birthdate": "26.04.2005",
+    "contacts": "+79716405392",
+    "student_id": "HPXINW02M9C4",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Ярков",
+    "first_name": "Филипий",
+    "patr_name": "Сысоевич",
+    "sex": "мужской",
+    "birthdate": "11.11.2006",
+    "contacts": "+79479268503",
+    "student_id": "9Y7KI8DJAHUG",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Черкасова",
+    "first_name": "Феклиста",
+    "patr_name": "Иустиновна",
+    "sex": "женский",
+    "birthdate": "08.08.2006",
+    "contacts": "+79308745612",
+    "student_id": "CMXHFBJO36KL",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Елагина",
+    "first_name": "Эдита",
+    "patr_name": "Васильевна",
+    "sex": "женский",
+    "birthdate": "17.05.2006",
+    "contacts": "+79021396785",
+    "student_id": "4P08LNRYJ7XC",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Персидский",
+    "first_name": "Аверьян",
+    "patr_name": "Титович",
+    "sex": "мужской",
+    "birthdate": "22.06.2005",
+    "contacts": "+79457839261",
+    "student_id": "9V3WMFKQPSE0",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Янушевский",
+    "first_name": "Онисим",
+    "patr_name": "Трифонович",
+    "sex": "мужской",
+    "birthdate": "09.04.2004",
+    "contacts": "+79619380754",
+    "student_id": "BWCMXH8RVU3S",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Альтовский",
+    "first_name": "Вячеслав",
+    "patr_name": "Вонифатович",
+    "sex": "мужской",
+    "birthdate": "18.05.2005",
+    "contacts": "+79517306849",
+    "student_id": "PZ83RKBYTNCL",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Древесная",
+    "first_name": "Гаафа",
+    "patr_name": "Сергеевна",
+    "sex": "женский",
+    "birthdate": "04.09.2004",
+    "contacts": "+79529374180",
+    "student_id": "M30LUINVFQKA",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Вершинина",
+    "first_name": "Викторина",
+    "patr_name": "Игоревна",
+    "sex": "женский",
+    "birthdate": "25.03.2005",
+    "contacts": "+79095327816",
+    "student_id": "DWTFPE63L1OY",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Минаева",
+    "first_name": "Мстислава",
+    "patr_name": "Валерьяновна",
+    "sex": "женский",
+    "birthdate": "21.03.2005",
+    "contacts": "+79026134987",
+    "student_id": "R8CYSILXO9P3",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Феофилактов",
+    "first_name": "Ростислав",
+    "patr_name": "Петрович",
+    "sex": "мужской",
+    "birthdate": "07.03.2006",
+    "contacts": "+79781493625",
+    "student_id": "6KPBUOYCL4AD",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Жеромская",
+    "first_name": "Камелия",
+    "patr_name": "Соломоновна",
+    "sex": "женский",
+    "birthdate": "24.07.2006",
+    "contacts": "+79250496813",
+    "student_id": "XCQ14K5PRIFS",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Язовский",
+    "first_name": "Виталий",
+    "patr_name": "Велимирович",
+    "sex": "мужской",
+    "birthdate": "14.07.2004",
+    "contacts": "+79516789324",
+    "student_id": "F01LAOHWIP86",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Форсов",
+    "first_name": "Кузьма",
+    "patr_name": "Агафонович",
+    "sex": "мужской",
+    "birthdate": "19.09.2006",
+    "contacts": "+79712853096",
+    "student_id": "ATI64QPH5SUF",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Думова",
+    "first_name": "Юлия",
+    "patr_name": "Анастасиевна",
+    "sex": "женский",
+    "birthdate": "28.02.2004",
+    "contacts": "+79640359872",
+    "student_id": "QENFOK3LIAT1",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Зефирова",
+    "first_name": "Констанция",
+    "patr_name": "Софоновна",
+    "sex": "женский",
+    "birthdate": "03.01.2006",
+    "contacts": "+79352167948",
+    "student_id": "T7CYHK9DSQI5",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Сотникова",
+    "first_name": "Хесса",
+    "patr_name": "Касьяновна",
+    "sex": "женский",
+    "birthdate": "01.02.2004",
+    "contacts": "+79326571849",
+    "student_id": "JT8M29PXIRBZ",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Крузо",
+    "first_name": "Фатима",
+    "patr_name": "Симоновна",
+    "sex": "женский",
+    "birthdate": "27.12.2005",
+    "contacts": "+79025317498",
+    "student_id": "B3X1OD7FP04H",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Юрьевская",
+    "first_name": "Антония",
+    "patr_name": "Семёновна",
+    "sex": "женский",
+    "birthdate": "19.09.2004",
+    "contacts": "+79789621045",
+    "student_id": "YN3GP5JLTBWV",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Левинская",
+    "first_name": "Селена",
+    "patr_name": "Аникеевна",
+    "sex": "женский",
+    "birthdate": "10.07.2005",
+    "contacts": "+79860539271",
+    "student_id": "DXQZEH06LWV1",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Ларская",
+    "first_name": "Александра",
+    "patr_name": "Ниловна",
+    "sex": "женский",
+    "birthdate": "15.06.2004",
+    "contacts": "+79749605832",
+    "student_id": "EKQICD8FSU2O",
+    "grant": "0.0"
+  },
+  {
+    "last_name": "Сладкий",
+    "first_name": "Исаак",
+    "patr_name": "Мелентиевич",
+    "sex": "мужской",
+    "birthdate": "16.11.2004",
+    "contacts": "+79618209357",
+    "student_id": "U528H0BZVJFD",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Уваров",
+    "first_name": "Адам",
+    "patr_name": "Филаретович",
+    "sex": "мужской",
+    "birthdate": "21.08.2005",
+    "contacts": "+79294573861",
+    "student_id": "FHAO8602E5RZ",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Ерофеев",
+    "first_name": "Егор",
+    "patr_name": "Аронович",
+    "sex": "мужской",
+    "birthdate": "08.08.2004",
+    "contacts": "+79680594731",
+    "student_id": "1XSCG76LZF84",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Шанский",
+    "first_name": "Иона",
+    "patr_name": "Иакинфович",
+    "sex": "мужской",
+    "birthdate": "22.11.2006",
+    "contacts": "+79849031625",
+    "student_id": "AT1WC80MFURK",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Мещерский",
+    "first_name": "Вонифат",
+    "patr_name": "Арсениевич",
+    "sex": "мужской",
+    "birthdate": "14.05.2004",
+    "contacts": "+79704839156",
+    "student_id": "08G24CQFUL7E",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Афинская",
+    "first_name": "Салиха",
+    "patr_name": "Аристарховна",
+    "sex": "женский",
+    "birthdate": "03.07.2005",
+    "contacts": "+79184057632",
+    "student_id": "XJLQNSV7UTR4",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Шевченко",
+    "first_name": "Милослава",
+    "patr_name": "Демьяновна",
+    "sex": "женский",
+    "birthdate": "28.08.2004",
+    "contacts": "+79912304758",
+    "student_id": "LE9WRV4GH8M6",
+    "grant": "2550.00"
+  },
+  {
+    "last_name": "Корнеев",
+    "first_name": "Леонард",
+    "patr_name": "Кононович",
+    "sex": "мужской",
+    "birthdate": "08.12.2004",
+    "contacts": "+79508743129",
+    "student_id": "H32OR5KGIE6C",
+    "grant": "2550.00"
+  }
+]

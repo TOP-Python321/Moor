@@ -1,0 +1,327 @@
+[
+  {
+    "last_name": "Эвентова",
+    "first_name": "Раида",
+    "patr_name": "Антиповна",
+    "sex": "женский",
+    "birthdate": "10.04.1960",
+    "contacts": "+79215483709",
+    "id_": 8217436,
+    "salary": 54840,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "1.8",
+    "courses": []
+  },
+  {
+    "last_name": "Аренская",
+    "first_name": "Велислава",
+    "patr_name": "Павловна",
+    "sex": "женский",
+    "birthdate": "26.01.1987",
+    "contacts": "+79617439528",
+    "id_": 14780962,
+    "salary": 51390,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "2.8",
+    "courses": [
+      "hlpvfy"
+    ]
+  },
+  {
+    "last_name": "Гиляровский",
+    "first_name": "Демид",
+    "patr_name": "Ипатиевич",
+    "sex": "мужской",
+    "birthdate": "27.06.2000",
+    "contacts": "+79276801395",
+    "id_": 9413256,
+    "salary": 41730,
+    "degree": "кандидат наук",
+    "titles": null,
+    "previous_experience": "35.4",
+    "courses": [
+      "uivnjlx",
+      "uvfjnc",
+      "uoymks"
+    ]
+  },
+  {
+    "last_name": "Огинский",
+    "first_name": "Гавриил",
+    "patr_name": "Валерианович",
+    "sex": "мужской",
+    "birthdate": "13.06.1998",
+    "contacts": "+79529364087",
+    "id_": 97308124,
+    "salary": 41730,
+    "degree": "доктор наук",
+    "titles": null,
+    "previous_experience": "23.9",
+    "courses": [
+      "iclbwhqer"
+    ]
+  },
+  {
+    "last_name": "Чудов",
+    "first_name": "Аксентий",
+    "patr_name": "Марленович",
+    "sex": "мужской",
+    "birthdate": "07.10.1997",
+    "contacts": "+79389167420",
+    "id_": 21795840,
+    "salary": 50700,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "19.7",
+    "courses": [
+      "fxupitsoa"
+    ]
+  },
+  {
+    "last_name": "Огнева",
+    "first_name": "Лидия",
+    "patr_name": "Донатовна",
+    "sex": "женский",
+    "birthdate": "22.02.1970",
+    "contacts": "+79390418627",
+    "id_": 83790126,
+    "salary": 50010,
+    "degree": "кандидат наук",
+    "titles": null,
+    "previous_experience": "22.9",
+    "courses": [
+      "ypgijh"
+    ]
+  },
+  {
+    "last_name": "Николаев",
+    "first_name": "Дормедонт",
+    "patr_name": "Авксентиевич",
+    "sex": "мужской",
+    "birthdate": "01.06.1966",
+    "contacts": "+79342678501",
+    "id_": 39268704,
+    "salary": 44490,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "11.8",
+    "courses": []
+  },
+  {
+    "last_name": "Богдановский",
+    "first_name": "Ермила",
+    "patr_name": "Ильич",
+    "sex": "мужской",
+    "birthdate": "25.02.1964",
+    "contacts": "+79615928730",
+    "id_": 78645239,
+    "salary": 56910,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "1.9",
+    "courses": []
+  },
+  {
+    "last_name": "Петров",
+    "first_name": "Михаил",
+    "patr_name": "Эммануилович",
+    "sex": "мужской",
+    "birthdate": "22.05.1982",
+    "contacts": "+79473095186",
+    "id_": 82576109,
+    "salary": 37590,
+    "degree": "кандидат наук",
+    "titles": null,
+    "previous_experience": "40.4",
+    "courses": []
+  },
+  {
+    "last_name": "Белоградский",
+    "first_name": "Корней",
+    "patr_name": "Ефремович",
+    "sex": "мужской",
+    "birthdate": "14.02.1974",
+    "contacts": "+79109872645",
+    "id_": 95430168,
+    "salary": 44490,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "20.2",
+    "courses": [
+      "axdbufw"
+    ]
+  },
+  {
+    "last_name": "Сердечникова",
+    "first_name": "Селена",
+    "patr_name": "Карповна",
+    "sex": "женский",
+    "birthdate": "03.04.1971",
+    "contacts": "+79254639871",
+    "id_": 36817950,
+    "salary": 50700,
+    "degree": "доктор наук",
+    "titles": null,
+    "previous_experience": "2.2",
+    "courses": [
+      "icendma"
+    ]
+  },
+  {
+    "last_name": "Никитин",
+    "first_name": "Мелетий",
+    "patr_name": "Гелиевич",
+    "sex": "мужской",
+    "birthdate": "22.06.1970",
+    "contacts": "+79986321407",
+    "id_": 89617435,
+    "salary": 45870,
+    "degree": "кандидат наук",
+    "titles": null,
+    "previous_experience": "39.9",
+    "courses": [
+      "wsivhzxat",
+      "wqfsotixz",
+      "fzdhwl"
+    ]
+  },
+  {
+    "last_name": "Новиков",
+    "first_name": "Пахомий",
+    "patr_name": "Ефимиевич",
+    "sex": "мужской",
+    "birthdate": "28.04.1999",
+    "contacts": "+79581729406",
+    "id_": 86417053,
+    "salary": 40350,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "34.8",
+    "courses": [
+      "amcdpi",
+      "xyfbdqms",
+      "kbcwpyruo"
+    ]
+  },
+  {
+    "last_name": "Владов",
+    "first_name": "Викторин",
+    "patr_name": "Евменович",
+    "sex": "мужской",
+    "birthdate": "13.12.1978",
+    "contacts": "+79397164508",
+    "id_": 72594081,
+    "salary": 35520,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "25.5",
+    "courses": [
+      "fjhsxbz",
+      "zrimldu",
+      "ogmwcye"
+    ]
+  },
+  {
+    "last_name": "Шереметьева",
+    "first_name": "Цецилия",
+    "patr_name": "Ксенофонтовна",
+    "sex": "женский",
+    "birthdate": "14.12.1962",
+    "contacts": "+79213856709",
+    "id_": 47539016,
+    "salary": 47940,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "20.9",
+    "courses": [
+      "olwimnatg",
+      "tlxmgrwa"
+    ]
+  },
+  {
+    "last_name": "Вавилонская",
+    "first_name": "Преслава",
+    "patr_name": "Устиновна",
+    "sex": "женский",
+    "birthdate": "01.01.1983",
+    "contacts": "+79176843025",
+    "id_": 17583094,
+    "salary": 54150,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "9.3",
+    "courses": [
+      "mtofnieqv",
+      "bydwogma",
+      "hfvqgmyl"
+    ]
+  },
+  {
+    "last_name": "Ясенская",
+    "first_name": "Улита",
+    "patr_name": "Порфириевна",
+    "sex": "женский",
+    "birthdate": "29.06.1988",
+    "contacts": "+79976481320",
+    "id_": 29018734,
+    "salary": 56910,
+    "degree": "кандидат наук",
+    "titles": null,
+    "previous_experience": "28.0",
+    "courses": [
+      "ubzrakl",
+      "hqvfuc"
+    ]
+  },
+  {
+    "last_name": "Шорохова",
+    "first_name": "Евдоксия",
+    "patr_name": "Кононовна",
+    "sex": "женский",
+    "birthdate": "28.06.1986",
+    "contacts": "+79061247953",
+    "id_": 62478319,
+    "salary": 49320,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "22.9",
+    "courses": [
+      "utiargfl",
+      "wltuvd",
+      "tyvwumpx"
+    ]
+  },
+  {
+    "last_name": "Арийская",
+    "first_name": "Петрония",
+    "patr_name": "Пармёновна",
+    "sex": "женский",
+    "birthdate": "07.09.1996",
+    "contacts": "+79256983417",
+    "id_": 87603419,
+    "salary": 49320,
+    "degree": "кандидат наук",
+    "titles": null,
+    "previous_experience": "29.1",
+    "courses": [
+      "ydfvqrozg",
+      "rhuwdsi"
+    ]
+  },
+  {
+    "last_name": "Шестов",
+    "first_name": "Казимир",
+    "patr_name": "Давидович",
+    "sex": "мужской",
+    "birthdate": "29.09.1999",
+    "contacts": "+79215734689",
+    "id_": 3572891,
+    "salary": 46560,
+    "degree": null,
+    "titles": null,
+    "previous_experience": "10.3",
+    "courses": []
+  }
+]
