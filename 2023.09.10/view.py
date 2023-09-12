@@ -1,3 +1,5 @@
+""" CLI представление. """
+
 class CLI:
     @staticmethod
     def input_email() -> str:
