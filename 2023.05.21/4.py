@@ -6,11 +6,11 @@ def repeat(func: 'callable') -> 'callable':
     :return: Декорированная функция.
     """
     def wrapper(*args, **kwargs):
-        for i in range(10):
+        for _ in range(10):
             print(func(*args, **kwargs))
     return wrapper
-    
-    
+
+
 # >>> def testing_function():
 # ...     return 'I WILL NOT SLEEP THROUGH MY EDUCATION'
 # ...
@@ -26,3 +26,6 @@ def repeat(func: 'callable') -> 'callable':
 # I WILL NOT SLEEP THROUGH MY EDUCATION
 # I WILL NOT SLEEP THROUGH MY EDUCATION
 # I WILL NOT SLEEP THROUGH MY EDUCATION
+
+
+# ИТОГ: отлично — 3/3

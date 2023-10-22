@@ -26,6 +26,7 @@ def logger(func: 'callable') -> 'callable':
         print(func_with_args, end=' -> ')
 
         try:
+            # ИСПРАВИТЬ: вызов функции должен или предшествовать всему выводу декоратора, или следовать уже после всего вывода декоратора — не посередине
             result = func(*args, **kwargs)
         except Exception as e:
             print(f"\t {type(e).__name__}: {str(e)}")
@@ -58,3 +59,10 @@ def logger(func: 'callable') -> 'callable':
 # >>> repeat('hello', 5)
 # repeat('hello', 5) -> hellohellohellohellohello
 # 'hellohellohellohellohello'
+
+# КОММЕНТАРИЙ: мало сценариев объявления и вызова декорируемой функции рассмотрено
+
+# СДЕЛАТЬ: изучите пример, запустите тестовые функции со своей реализацией декоратора, найдите ошибки
+
+
+# ИТОГ: хорошо, но можно лучше — 4/7
