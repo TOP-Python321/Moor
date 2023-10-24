@@ -44,6 +44,7 @@ create table music_collection (
 create table songs (
 	id int unsigned primary key auto_increment,
 	song varchar(45) not null,
+	performer_id smallint unsigned,
 	collection smallint unsigned not null,
 	style tinyint unsigned not null,
 	duration decimal(4, 2) not null,
@@ -54,5 +55,8 @@ create table songs (
 	constraint styles_songs
 		foreign key (style) references styles (id)
 		on delete cascade 
-		on update cascade
+		on update cascade,
+	foreign key (performer_id) references performers (id)
+	on delete restrict 
+	on update cascade
 );
