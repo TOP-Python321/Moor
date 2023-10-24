@@ -1,9 +1,13 @@
+def round_string(num: float) -> str:
+    return str(round(num))
+
+
 def math_function_resolver(
         operation: 'callable',
         # ИСПРАВИТЬ: для произвольного кортежа аргументов всегда аннотируется сразу тип элементов
-        *args: tuple[float],
+        *args: float,
         strings: bool = False
-) -> list[float | str]:
+) -> list[int | str]:
     """
     Функция вычисляет округлённые значения для различных математических функций.
     
@@ -13,15 +17,10 @@ def math_function_resolver(
     если True, иначе возвращает float.
     :return: Список результатов вычисления.
     """
-    result = []
-    for arg in args:
-        num = operation(arg)
         # КОММЕНТАРИЙ: без этой проверки на каждой итерации желательно бы обойтись
-        if strings:
-            num = str(round(num, 2))
         # ИСПРАВИТЬ: ошибка (см. тест ниже)
-        result.append(round(num, 2))
-    return result
+    converting = round_string if strings else round
+    return [converting(operation(num)) for num in args]
 
 
 # >>> math_function_resolver(lambda x: 2.72**x, *range(1, 10), strings=True)
@@ -29,7 +28,7 @@ def math_function_resolver(
 
 # >>> math_function_resolver(lambda x: 1.5**x, *range(1, 10), strings=True)
 # КОММЕНТАРИЙ: у вас не такой результат для этого теста
-# ['1.5', '2.25', '3.38', '5.06', '7.59', '11.39', '17.09', '25.63', '38.44']
+# ['2', '2', '3', '5', '8', '11', '17', '26', '38']
 # КОММЕНТАРИЙ: а вот такой
 # TypeError: type str doesn't define __round__ method
 
