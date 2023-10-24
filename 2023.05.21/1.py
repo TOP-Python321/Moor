@@ -26,11 +26,10 @@ def pick_resistors(resistance: int) -> dict | None:
     if 100 < resistance < 999:
         result = {}
         # УДАЛИТЬ: словарь differences избыточен
-        differences = {}
 
         for key in nominals:
-            differences[key] = min(tuple(map(lambda x: abs(x - resistance), nominals[key])))
-            closest_value = tuple(filter(lambda x: abs(x - resistance) == differences[key], nominals[key]))
+            result[key] = min(tuple(map(lambda x: abs(x - resistance), nominals[key])))
+            closest_value = tuple(filter(lambda x: abs(x - resistance) == result[key], nominals[key]))
             result[key] = closest_value
 
         return result
