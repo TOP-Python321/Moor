@@ -17,8 +17,8 @@ def ask_for_file() -> types.ModuleType:
         else:
             break
     return load_file(file_path)
-    
-    
+
+
 # >>> config = ask_for_file()
 # путь: D:\ACADEMY\HW\2023.05.28\dat
 # ! по указанному пути отсутствует необходимый файл !
@@ -32,3 +32,15 @@ def ask_for_file() -> types.ModuleType:
 # >>>
 # >>> config.TIMER
 # 20
+
+# >>> module = ask_for_file()
+# путь: d:\G-Doc\YandexDisk\Scripts\_Singles\si_unit.py
+# >>>
+# >>> module.SIUnit
+# <class 'si_unit.py.SIUnit'>
+
+
+# КОММЕНТАРИЙ: очень одобряю более гибкую реализацию функции load_file()
+
+
+# ИТОГ: очень хорошо — 5/6

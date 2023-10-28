@@ -1,16 +1,14 @@
 from pathlib import Path
 import importlib.util
-import re
 import shutil
 
 
-
+# КОММЕНТАРИЙ: много лишних переменных и лишних действий
 def important_message(text: str) -> str:
     """
     Функция генерирует строку, в которой переданный текст будет обрамлён рамкой из символов '=' и '#'.
     
     :param text: Строка. Текст сообщения от пользователя.
-    
     :return: Строка.
     """
     terminal_size = shutil.get_terminal_size().columns
@@ -36,21 +34,22 @@ def important_message(text: str) -> str:
     header += f"{empty_line}\n{lines}\n\n"
     
     return header
-    
+
     
 def load_file(path: str):
     """
     Функция проверяет наличие файла по указанному пути. Если файл обнаружен, копирует его в другой каталог.
     
     :param path: Строка. Путь к потерянному файлу.
-    
     :return: Объект модуля, созданного при импортировании файла.
     """
     user_path = Path(path)
+    # ИСПРАВИТЬ: с текущим рабочим каталогом надо бы аккуратно — вы не знаете, что это за каталог и как он расположен относительно ваших файлов — а про каталог data вы знаете, что он расположен рядом с текущим файлом
     load_path = Path.cwd()
 
     shutil.copy2(user_path, load_path)
-    
+
+    # КОММЕНТАРИЙ: функция copy2() возвращает путь к копии файла в новом расположении
     name_modul = user_path.name
     path_modul = load_path.joinpath(name_modul)
     spec = importlib.util.spec_from_file_location(name_modul, path_modul)
@@ -58,14 +57,13 @@ def load_file(path: str):
     spec.loader.exec_module(module)
     
     return module
-       
-    
-def search_files(user_path: str) -> dict[str, str]:
+
+
+def search_files(user_path: str | Path) -> dict[str, str]:
     """
-    Функция осуществляет поиск и чтение всех файлов с раширением .txt по указанному пути.
+    Функция осуществляет поиск и чтение всех файлов с расширением .txt по указанному пути.
     
-    :param user_path: Строка. Путь к дирректории.
-    
+    :param user_path: Строка. Путь к директории.
     :return: Словарь. Ключ - название файла, значение - содержимое файла.
     """
     file_ext = r'*.txt'
@@ -75,7 +73,8 @@ def search_files(user_path: str) -> dict[str, str]:
     for path in Path(user_path).glob(file_ext):
         with open(path, 'r', encoding='utf-8') as f:
             text = f.read()
+            # КОММЕНТАРИЙ: сложно как-то..
             files[text_files[0 + index]] = text
             index += 1
     return files
-    
+

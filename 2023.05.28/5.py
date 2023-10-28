@@ -6,9 +6,11 @@ def logger(func: 'callable') -> 'callable':
     Декоратор, сохраняющий журнал вызовов декорируемой функции в файл.
     """
     def wrapper(*args, **kwargs):
+        # ИСПРАВИТЬ: у вас может пройти заметное время от этой временной отметки до начала выполнения декорируемой функции, в том числе и целое количество секунд — в основном потому что между сохранением времени и вызовом функции находится выполнение операций с накопителем
         now = dt.now()
         today = now.strftime('%Y.%m.%d %H:%M:%S')
-        
+
+        # ИСПРАВИТЬ: относительный путь в функции open() зависит от текущего рабочего каталога (cwd), поэтому лучше использовать абсолютные пути
         with open('data\\function_calls.log', 'a', encoding='utf-8') as file:
         
             log = []
@@ -48,8 +50,8 @@ def logger(func: 'callable') -> 'callable':
         return result
 
     return wrapper
-    
-    
+
+
 # >>> def div_round(num1, num2, *, digits=0):
 # ...     return round(num1 / num2, digits)
 # ...
@@ -73,3 +75,6 @@ def logger(func: 'callable') -> 'callable':
 # 2023.06.01 14:50:11 - div_round(45, 12, digits=2) -> 3.75
 # 2023.06.01 14:53:14 - total(8, 4, number=7, digits=0) -> 36
 # 2023.06.01 15:00:06 - test_func() -> None
+
+
+# ИТОГ: хорошо, но можно лучше — 4/6

@@ -14,8 +14,8 @@ def search_context(*keywords: str, context: int=0) -> list[dict]:
     """
     directory = Path.cwd() / 'data'
     files = search_files(directory)
-    results = []
 
+    results = []
     for filename, text in files.items():
         for count, line in enumerate(text.split('\n'), start=1):
             found_keywords = []
@@ -30,6 +30,7 @@ def search_context(*keywords: str, context: int=0) -> list[dict]:
                     'context': context,
                     'text': ''
                 }
+                # ИСПРАВИТЬ: избыточная проверка, срезы можно брать с любыми значениями индексов
                 if count == len(text.split('\n')):
                     text_context = '\n'.join(text.split('\n')[count - context - 1:])
                 else:
@@ -37,7 +38,7 @@ def search_context(*keywords: str, context: int=0) -> list[dict]:
                 result['text'] = text_context
                 results.append(result)
     return results
-    
+
 
 # >>> from pprint import pprint
 # >>>
@@ -227,3 +228,6 @@ def search_context(*keywords: str, context: int=0) -> list[dict]:
           # 'особенно не варилась в его голове: как ни переворачивал он ее, но '
           # 'никак не мог изъяснить себе, и все время сидел он и курил трубку, '
           # 'что тянулось до самого ужина.'}]
+
+
+# ИТОГ: очень хорошо — 5/5
