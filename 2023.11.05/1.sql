@@ -128,3 +128,21 @@ order by days;
 -- (в зависимости от количества палат в отделении), от всех пожертвований каждому отделению; 
 -- отсортировать по убыванию найденной суммы
 
+select department,  round(sum(donations.amount) / count(distinct wards.ward, 2)) as `donation_per_ward`
+from departments
+join wards
+on  departments.id = wards.departments_id
+join donations
+on donations.departments_id = departments.id
+group by department
+order by `donation_per_ward` desc;
+
+
+select department,  round(sum(donations.amount) / count(distinct wards.ward)) as `donation_per_ward`, count(distinct wards.ward) as cou
+from departments
+join wards
+on  departments.id = wards.departments_id
+join donations
+on donations.departments_id = departments.id
+group by department
+order by `donation_per_ward` / count(distinct wards.ward) desc;

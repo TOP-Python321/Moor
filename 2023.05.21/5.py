@@ -5,7 +5,13 @@ def logger(func: 'callable') -> 'callable':
     def wrapper(*args, **kwargs):
         log = []
         log.append(f"{func.__name__}(")
-
+        
+        try:
+            result = func(*args, **kwargs)
+        except Exception as e:
+            print(f"\t {type(e).__name__}: {str(e)}")
+            return
+            
         for i in args:
             log.append(repr(i) + ", ")
 
@@ -25,12 +31,9 @@ def logger(func: 'callable') -> 'callable':
         func_with_args = ''.join(log)
         print(func_with_args, end=' -> ')
 
-        try:
+
             # ИСПРАВИТЬ: вызов функции должен или предшествовать всему выводу декоратора, или следовать уже после всего вывода декоратора — не посередине
-            result = func(*args, **kwargs)
-        except Exception as e:
-            print(f"\t {type(e).__name__}: {str(e)}")
-            return
+        
 
         if result is not None:
             print(result)
@@ -41,6 +44,13 @@ def logger(func: 'callable') -> 'callable':
 
     return wrapper
     
+    
+@logger
+def div_round(num1, num2, *, digits=0):
+    return round(num1 / num2, digits)
+    
+div_round(5, 0, digits=2)    
+
     
 # >>> def div_round(num1, num2, *, digits=0):
 # ...     return round(num1 / num2, digits)
